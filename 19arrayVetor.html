@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 - Vetor/Array</title>
+
+    <!-- JS -->
+     <script>
+      
+      // Adicionar - Alterar - Excluir
+
+      // Array
+      const cores = ["Azul", " Verde", " Vermelho", " Amarelo", " Verde", " Rosa"]
+        
+      // Exibir o array
+     /*
+      document.write(cores);
+      document.write("<br>" + "<br>");
+     */
+     
+     // Exibir informação de uma determinação exata
+     /* 
+      document.write("A informação determinada que percorre é: " + cores[3]);
+      document.write("<br>" + "<br>");
+      document.write("Que esta na posição: " + [3]);
+      document.write("<br>" + "<br>");
+     */
+
+      // Exibir a quantidade
+     /*
+      document.write("Quantida de informações é: " + cores.length);
+      document.write("<br>" + "<br>");
+     */
+
+      // Adicionar
+      cores.push("Preto");  
+
+      // Alterar
+      cores[2] = "Branco";
+
+      // Excluir
+      cores.splice(5, 1);
+
+      // Listando todos cores
+      for($i = 0; $i < cores.length; $i++){
+        document.write(($i+1) + "º " + "= " + (cores[$i]) + "<br>")
+      }  
+
+     </script>
+</head>
+<body>
+    
+</body>
+</html>

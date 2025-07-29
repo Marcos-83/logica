@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 - Operadores Lógicos</title>
+    <!-- JS -->
+     <script>
+
+        /*
+            && -> E
+            || -> OU
+            !  -> NEGAÇÃO
+        */ 
+
+        // Exemplo 01 (Usando o !)
+        document.write(true);
+        document.write("<br>");
+        document.write(!true);
+        document.write("<br>");
+        
+        // Exemplo 02 (Usando o && ) -> tem que ser as duas condiçoes verdadeiras
+        const valor = 1000;
+        const pagamento = "a vista";
+        
+        if((valor >= 1000) && (pagamento == "a vista")){
+            document.write("Haverá um desconto!");
+        } else{
+            document.write("Não tem desconto");
+        }
+        document.write("<br>");
+        
+        // Exemplo 03 (Usando o || ) -> se caso uma das duas condiçoes for verdadeira trará o resultado do if
+        const valores = 900;
+        const condicaoPagamento = "a prazo";
+
+        if((valores >= 1000) || (condicaoPagamento == "a vista")){
+            document.write("Haverá um desconto!");
+        } else{
+            document.write("Não tem desconto");
+        }
+        
+
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
